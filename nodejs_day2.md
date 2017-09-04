@@ -391,3 +391,4 @@ app.use('/static', express.static('public'))
 <script type="text/javascript" src="/static/index.js"></script>
 ```
 [ejs 실습](https://upbeat-pound.glitch.me/profile/suhyeon)
+> ejs와 pug도 같이 실습할 것
