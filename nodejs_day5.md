@@ -386,3 +386,20 @@ app.listen(3000, () => {
 
 ```
 ## FETCH API
+- 웹브라우저의 xmlHttpRequest를 대체하기위해 만들어진 새로운 http client표준
+- 비교적 최근에 도입되었다
+  - IE및 구형 안드로이드 브라우저는 지원하지 않는다.
+- [FETCH POLYFILL](https://github.com/github/fetch)
+- [ISOMORPHIC-FETCH](https://www.npmjs.com/package/isomorphic-fetch)
+
+### AXIOS VS FETCH API
+- FETCHAPI
+  - INSTANCE와 같은 설정을 재사용하거나 요청중인 연결을 취소하는 편의기능이 없다.
+  - SERVICE WORKER를 사용하려면 FETCHAPI를 사용해야 한다.
+- AXIOS
+  - 현재의 가장 좋은 선택
+  - 내부적으로 XMLHTTPREQUEST를 사용하고 있다.
+  - SERVICE WORKER등의 웹최신 기술이 XMLHTTPREQUEST를 지원하지 않는다.
+ 
+### FETCH API 멋있는것!!
+[링크](http://hacks.mozilla.or.kr/2015/05/this-api-is-so-fetching/)
