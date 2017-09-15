@@ -89,3 +89,12 @@ knex.schema.alterTable('table_name', function(table) {
   table.integer('old_int_column').notNullable().alter()
 })
 ```
+
+### 쓰기 vs 읽기
+읽기가 많이 일어나는 서비스 : 인덱스를 걸어주는 것이 맞다.  
+쓰기가 많이 일어나는 서비스 : 인덱스를 걸어주지 않는 것이 맞다.
+> 속도차이가 나기 때문. 인덱스가 있다면 쓸때마다 그 인덱스를 다시 정렬하는 경우가 많기 때문에 쓰기가 많이 일어나는 서비스라면 인덱스가 없어야 맞다.
+
+## MIGRATION
+데이터 구조 변경, 재구축
+
