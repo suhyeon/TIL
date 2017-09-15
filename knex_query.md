@@ -416,6 +416,7 @@ knex('employees')
 ```
 > 만약 반환된 행이 없다면 first의 결과는 undefined가 된다.
 
+first() : 객체 반환 , 없다면 배열반환
 #### .raw()
 직접 작성한 쿼리를 여러 메소드에서 사용할 수 있다.
 ```javascript
