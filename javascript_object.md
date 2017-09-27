@@ -209,3 +209,14 @@ for(var prop in person) {
 
 ### 4. Pass-by-reference
 참조형 : 객체의 모든 연산이 실제값이 아닌 참조값으로 처리됨을 의미
+
+>input 이 기본자료형인지 객체인지에 따라 처리값이 달라진다.
+
+`single-tone`
+
+- 객체 
+  - 실제값이 아닌 참조값으로 처리된다.
+- 기본자료형
+  - 값(value)으로 전달된다. 복사되어 전달된다.
+
+### 5. Pass-by-value

@@ -118,3 +118,21 @@ MongoDB : db.members.remove({name:"홍길동"})
   - 분류 4곳
   - 합류 4곳
   - 교차 0곳
+
+## MONGOOSE
+NODE.JS 와 연결하는 모듈
+```javascript
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/test');
+
+var Cat = mongoose.model('Cat', { name: String });
+
+var kitty = new Cat({ name: 'Zildjian' });
+kitty.save(function (err) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('meow');
+  }
+});
+```
